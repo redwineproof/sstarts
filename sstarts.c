@@ -116,7 +116,7 @@ static timestamp_buffer_t buffer1, buffer2;
 static timestamp_buffer_t *current_buffer, *read_buffer;
 static atomic_t buffer_index;
 
-#define DEBUG
+//#define DEBUG
 
 MI_S32 _mi_vif_framestart(MI_U64 u64Data)
 {
@@ -284,7 +284,7 @@ static MS_S32 _mi_vpe_testUnRegVpeCallback(void)
     return MI_VPE_CallBackTask_Unregister(&stCallBackParam5);
 }
 
-#define PROC_FILENAME "mi_isr_timestamps"
+#define PROC_FILENAME "sstarts"
 
 static ssize_t proc_read(struct file *file, char __user *buf, size_t count, loff_t *ppos) {
     char buffer[256];
